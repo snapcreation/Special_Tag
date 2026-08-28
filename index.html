@@ -54,6 +54,58 @@ select:focus {
         0 0 0 2px rgba(195,154,78,.12);
 }
 
+<!-- =======================================================
+     HOME BUTTON
+======================================================= -->
+    .home-button-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .home-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+
+        padding: 10px 20px;
+
+        background: linear-gradient(135deg, #d4af37, #f5d76e);
+        color: #1a1a1a;
+
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+
+        border: 2px solid #b8860b;
+        border-radius: 8px;
+
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.20);
+
+        transition: all 0.3s ease;
+    }
+
+    .home-icon {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1;
+    }
+
+    .home-btn:hover {
+        background: linear-gradient(135deg, #f5d76e, #d4af37);
+        color: #000;
+
+        transform: translateY(-2px);
+
+        box-shadow: 0 6px 14px rgba(0, 0, 0, 0.30);
+    }
+
+    .home-btn:active {
+        transform: translateY(0);
+    }
 
 /* =====================================================
    MAIN LAYOUT
@@ -257,7 +309,18 @@ main {
 <h1 class="text-xl md:text-2xl font-bold tracking-wide">
 VYSYARAJU JEWELLERS PVT. LTD.
 </h1>
+<div class="home-button-container">
 
+    <a
+        href="index.html"
+        class="home-btn"
+        title="Go to Home"
+    >
+        <span class="home-icon">⌂</span>
+        HOME
+    </a>
+
+</div>
 <p class="text-[#d9b978] text-xs md:text-sm mt-1">
 Special Tag Dashboard
 </p>
